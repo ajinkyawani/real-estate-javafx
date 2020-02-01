@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.awani1_6617_hw3.PreviewHouseListingController">
+   <children>
+      <TableView fx:id="houseTableView" layoutX="86.0" layoutY="78.0" prefHeight="200.0" prefWidth="252.0">
+        <columns>
+          <TableColumn fx:id="listingTypeColumn" prefWidth="91.0" text="Listing Type" />
+          <TableColumn fx:id="purchasePriceColumn" prefWidth="99.0" text="Purchase Price" />
+        </columns>
+      </TableView>
+      <Button fx:id="backButton" layoutX="374.0" layoutY="344.0" mnemonicParsing="false" onAction="#returnToBackWindow" text="Back" />
+      <Button fx:id="returnMainMenuButton" layoutX="460.0" layoutY="344.0" mnemonicParsing="false" onAction="#returnToMainMenuWindow" text="Return To Main Menu" />
+      <Button fx:id="viewButton" layoutX="97.0" layoutY="290.0" mnemonicParsing="false" onAction="#view" text="View" />
+      <Button fx:id="editButton" layoutX="174.0" layoutY="290.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
+      <Button fx:id="deleteButton" layoutX="261.0" layoutY="290.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.awani1_6617_hw3.PreviewAptListingController">
+   <children>
+      <TableView fx:id="aptTableView" layoutX="80.0" layoutY="31.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="listingTypeColumn" prefWidth="75.0" text="Listing Type" />
+          <TableColumn fx:id="monthlyRentColumn" prefWidth="96.0" text="Monthly Rent" />
+        </columns>
+      </TableView>
+      <Button fx:id="returnToMainMenuButton" layoutX="352.0" layoutY="322.0" mnemonicParsing="false" onAction="#returnToMainMenuWindow" text="Return To Main Menu" />
+      <Button fx:id="backButton" layoutX="250.0" layoutY="322.0" mnemonicParsing="false" onAction="#returnToBackWindow" text="Back" />
+      <Button fx:id="viewButton" layoutX="109.0" layoutY="257.0" mnemonicParsing="false" onAction="#view" text="View" />
+      <Button fx:id="editButton" layoutX="186.0" layoutY="257.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
+      <Button fx:id="deleteButton" layoutX="273.0" layoutY="257.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+   </children>
+</AnchorPane>

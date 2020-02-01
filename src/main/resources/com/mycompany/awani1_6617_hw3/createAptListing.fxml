@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.awani1_6617_hw3.CreateAptListingController">
+   <children>
+      <GridPane layoutX="90.0" layoutY="42.0" prefHeight="361.0" prefWidth="420.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.0" minWidth="10.0" prefWidth="172.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="277.0" minWidth="10.0" prefWidth="277.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Lease Period" GridPane.rowIndex="7" />
+            <Label text="City" GridPane.rowIndex="1" />
+            <Label text="Monthly Rent" GridPane.rowIndex="6" />
+            <Label text="Number of Bathrooms" GridPane.rowIndex="5" />
+            <Label text="Number of Bedrooms" GridPane.rowIndex="4" />
+            <Label text="Postal Code" GridPane.rowIndex="3" />
+            <Label text="State" GridPane.rowIndex="2" />
+            <Label text="Address" />
+            <TextField fx:id="addressField" prefWidth="264.0" GridPane.columnIndex="1" />
+            <TextField fx:id="bathroomNumField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="bedroomNumField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="postalCodeField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="stateField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="cityField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="leasePeriodField" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="monthlyRentField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label text="Description" GridPane.rowIndex="8" />
+            <TextField fx:id="descriotionField" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+         </children>
+      </GridPane>
+      <Button fx:id="saveBurtton" layoutX="235.0" layoutY="424.0" mnemonicParsing="false" onAction="#createListing" text="Save" />
+      <Button fx:id="backButton" layoutX="356.0" layoutY="424.0" mnemonicParsing="false" onAction="#returnToBackWindow" text="Back" />
+      <Label layoutX="266.0" layoutY="14.0" text="Add New Apartment" />
+   </children>
+</AnchorPane>

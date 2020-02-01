@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.awani1_6617_hw3.ViewEditListingController">
+   <children>
+      <Button fx:id="backButton" layoutX="480.0" layoutY="348.0" mnemonicParsing="false" onAction="#returnToBackWindow" text="Back" />
+      <Label layoutX="238.0" layoutY="43.0" text="Choose one of the listings for preview" />
+      <Button fx:id="previewAptListingButton" layoutX="108.0" layoutY="237.0" mnemonicParsing="false" onAction="#switchToPreviewAptListingWindow" text="Preview Apartment Listing" />
+      <Button fx:id="previewCondoListingButton" layoutX="106.0" layoutY="187.0" mnemonicParsing="false" onAction="#switchToPreviewCondoListingWindow" text="Preview Condominium Listing" />
+      <Button fx:id="previewHouseListingButton" layoutX="109.0" layoutY="140.0" mnemonicParsing="false" onAction="#switchToPreviewHouseListingWindow" text="Preview House Listing" />
+      <Button fx:id="previewAllPropertyButton" layoutX="106.0" layoutY="288.0" mnemonicParsing="false" onAction="#switchToPreviewAllPropertyListingWindow" text="Preview All Property Listing" />
+   </children>
+</AnchorPane>

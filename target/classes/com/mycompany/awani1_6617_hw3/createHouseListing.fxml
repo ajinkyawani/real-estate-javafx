@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="525.0" prefWidth="674.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.awani1_6617_hw3.CreateHouseListingController">
+   <children>
+      <TextField fx:id="addressField" layoutX="274.0" layoutY="14.0" />
+      <TextField fx:id="cityField" layoutX="274.0" layoutY="53.0" />
+      <TextField fx:id="stateField" layoutX="274.0" layoutY="91.0" />
+      <TextField fx:id="postalCodeField" layoutX="274.0" layoutY="133.0" />
+      <TextField fx:id="bedroomNumField" layoutX="274.0" layoutY="187.0" />
+      <TextField fx:id="bathroomNumField" layoutX="274.0" layoutY="235.0" />
+      <Label layoutX="93.0" layoutY="19.0" text="Address" />
+      <Label layoutX="93.0" layoutY="53.0" prefHeight="17.0" prefWidth="46.0" text="City" />
+      <Label layoutX="93.0" layoutY="96.0" text="State" />
+      <Label layoutX="93.0" layoutY="133.0" text="Postal Code" />
+      <Label layoutX="93.0" layoutY="187.0" text="Number Of Bedrooms" />
+      <Label layoutX="89.0" layoutY="240.0" text="Number of Bathrooms" />
+      <Label layoutX="99.0" layoutY="279.0" text="Purchase Prize" />
+      <Label layoutX="92.0" layoutY="318.0" text="Annual Taxes" />
+      <TextField fx:id="purchasePrizeField" layoutX="274.0" layoutY="274.0" />
+      <TextField fx:id="annualTaxesField" layoutX="274.0" layoutY="313.0" />
+      <Button fx:id="createButton" layoutX="138.0" layoutY="423.0" mnemonicParsing="false" onAction="#createListing" text="Create" />
+      <Button fx:id="backButton" layoutX="251.0" layoutY="423.0" mnemonicParsing="false" onAction="#switchToMainMenu" text="Back" />
+      <Label layoutX="92.0" layoutY="360.0" text="Description" />
+      <TextField fx:id="descriptionField" layoutX="274.0" layoutY="355.0" />
+   </children>
+</AnchorPane>
